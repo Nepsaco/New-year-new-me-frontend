@@ -10,17 +10,30 @@
         width: 80%;
         height: 70%;
         label {
-            padding-bottom: 0.5rem;
+            padding-bottom: 1rem;
             @include headerfont;
         }
         input {
+            text-align: center;
             @include regularfont;
             border: none;
             border-radius: 10em;
             box-shadow: $shadow1;
-            height: 3vh;
+            height: 4vh;
             width: 30vh;
-            margin-bottom: 2rem;
+            margin-bottom: 1rem;
+
+            &.button {
+                text-align: center;
+                width: 25%;
+                &:hover {
+                    background-color: $primary8;
+                }
+                &:active{
+                    background-color: $primary6;
+                }
+
+            }
         }
     }
 }

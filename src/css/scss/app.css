@@ -62,7 +62,7 @@ table {
     width: 80%;
     height: 70%; }
     .login form label {
-      padding-bottom: 0.5rem;
+      padding-bottom: 1rem;
       font-family: "Niramit", sans-serif;
       font-weight: 700;
       font-size: 4.1472rem; }
@@ -75,13 +75,14 @@ table {
           .login form label {
             font-size: 54px; } }
     .login form input {
+      text-align: center;
       font-family: "Niramit", sans-serif;
       border: none;
       border-radius: 10em;
       box-shadow: 2px 2px 5px #570f2d;
-      height: 3vh;
+      height: 4vh;
       width: 30vh;
-      margin-bottom: 2rem; }
+      margin-bottom: 1rem; }
       .login form input {
         font-size: 16px; }
         @media screen and (min-width: 320px) {
@@ -90,6 +91,13 @@ table {
         @media screen and (min-width: 1200px) {
           .login form input {
             font-size: 24px; } }
+      .login form input.button {
+        text-align: center;
+        width: 25%; }
+        .login form input.button:hover {
+          background-color: #fad1e2; }
+        .login form input.button:active {
+          background-color: #d98cac; }
 
 .App {
   display: grid;
