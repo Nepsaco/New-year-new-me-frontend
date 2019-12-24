@@ -1,3 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Mr+Dafoe|Niramit:200,400,700&display=swap');
+
+$font_type: 'Niramit', sans-serif;
+$font_title: 'Mr Dafoe', cursive;
+
+$mod_1: 1.2; // mobile
+$mod_2: 1.5; // desktop
+
+@mixin titlefont {
+    font-family: $font_title;
+    @include fluid-type($min_width, $max_width, $mod_1*$mod_1*$mod_1*$mod_1 *$min_font, $mod_2*$mod_2*$mod_2*$mod_2 *$min_font);
+}
+
+@mixin headerfont {
+    font-family: $font_type;
+    font-weight: 700;
+    font-size: $mod_1*$mod_1*$mod_1*$mod_1 *2rem; 
+    @include fluid-type($min_width, $max_width, $mod_1*$mod_1*$mod_1 *$min_font, $mod_2*$mod_2*$mod_2 *$min_font);
+}
+
+@mixin regularfont {
+    font-family: $font_type;
+    @include fluid-type($min_width, $max_width, $min_font, $max_font);
+}
+
+
+// h1 {  
+//   font-size: $mod_1*$mod_1*$mod_1*$mod_1 *1rem; 
+//   @include fluid-type($min_width, $max_width, $mod_1*$mod_1*$mod_1 *$min_font, $mod_2*$mod_2*$mod_2 *$min_font);
+// }
+// h2 {  
+//   font-size: $mod_1*$mod_1*$mod_1 *1rem; 
+//   @include fluid-type($min_width, $max_width, $mod_1*$mod_1*$mod_1 *$min_font, $mod_2*$mod_2*$mod_2 *$min_font);
+// }
+// h3 { 
+//   font-size: $mod_1*$mod_1 *1rem;
+//   @include fluid-type($min_width, $max_width, $mod_1*$mod_1 *$min_font, $mod_2*$mod_2 *$min_font);
+// }
+
 $min_width: 320px;
 $max_width: 1200px;
 $min_font: 16px;

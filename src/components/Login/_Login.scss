@@ -1,0 +1,26 @@
+.login {
+    grid-column: 2 / span 1;
+    grid-row: 3;
+    @include centerFlex;
+    form {
+        @include centerFlex;
+        justify-content: center;
+        background-color: $primary5;
+        box-shadow: $shadow1; 
+        width: 80%;
+        height: 70%;
+        label {
+            padding-bottom: 0.5rem;
+            @include headerfont;
+        }
+        input {
+            @include regularfont;
+            border: none;
+            border-radius: 10em;
+            box-shadow: $shadow1;
+            height: 3vh;
+            width: 30vh;
+            margin-bottom: 2rem;
+        }
+    }
+}

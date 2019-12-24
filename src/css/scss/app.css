@@ -2,6 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url("https://fonts.googleapis.com/css?family=Mr+Dafoe|Niramit:200,400,700&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -45,13 +46,64 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-html {
-  font-size: 16px; }
-  @media screen and (min-width: 320px) {
-    html {
-      font-size: calc(16px + 8 * ((100vw - 320px) / 880)); } }
-  @media screen and (min-width: 1200px) {
-    html {
-      font-size: 24px; } }
+.login {
+  grid-column: 2 / span 1;
+  grid-row: 3;
+  display: flex;
+  flex-flow: column;
+  align-items: center; }
+  .login form {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #b94676;
+    box-shadow: 2px 2px 5px #570f2d;
+    width: 80%;
+    height: 70%; }
+    .login form label {
+      padding-bottom: 0.5rem;
+      font-family: "Niramit", sans-serif;
+      font-weight: 700;
+      font-size: 4.1472rem; }
+      .login form label {
+        font-size: 27.648px; }
+        @media screen and (min-width: 320px) {
+          .login form label {
+            font-size: calc(27.648px + 26.352 * ((100vw - 320px) / 880)); } }
+        @media screen and (min-width: 1200px) {
+          .login form label {
+            font-size: 54px; } }
+    .login form input {
+      font-family: "Niramit", sans-serif;
+      border: none;
+      border-radius: 10em;
+      box-shadow: 2px 2px 5px #570f2d;
+      height: 3vh;
+      width: 30vh;
+      margin-bottom: 2rem; }
+      .login form input {
+        font-size: 16px; }
+        @media screen and (min-width: 320px) {
+          .login form input {
+            font-size: calc(16px + 8 * ((100vw - 320px) / 880)); } }
+        @media screen and (min-width: 1200px) {
+          .login form input {
+            font-size: 24px; } }
+
+.App {
+  display: grid;
+  height: 100vh;
+  width: 100vw;
+  grid-template-columns: 10vw auto 10vw;
+  grid-template-rows: 20vw 20vw auto; }
+  .App {
+    font-size: 16px; }
+    @media screen and (min-width: 320px) {
+      .App {
+        font-size: calc(16px + 8 * ((100vw - 320px) / 880)); } }
+    @media screen and (min-width: 1200px) {
+      .App {
+        font-size: 24px; } }
 
 /*# sourceMappingURL=app.css.map */

@@ -1,0 +1,7 @@
+$shadow1: 2px 2px 5px $primary2;  
+
+@mixin centerFlex {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
