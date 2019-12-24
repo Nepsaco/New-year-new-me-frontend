@@ -1,5 +1,9 @@
 @import 'reset';
+@import 'color';
+@import 'font';
 
-body {
-    background-color: black;
+
+html {
+    @include fluid-type($min_width, $max_width, $min_font, $max_font);
 }
+
