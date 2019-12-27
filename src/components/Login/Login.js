@@ -16,13 +16,12 @@ export default class Login extends Component{
 
     submitHandler = (event) => {
         event.preventDefault()
-
     }
 
     render(){
         return(
             <div className='login'>
-                <form onSubmit>
+                <form onSubmit={this.submitHandler}>
                     <label>Username</label>
                     <input type='text' name='username' required onChange={this.changeHandler}/>
                     <label>Password</label>

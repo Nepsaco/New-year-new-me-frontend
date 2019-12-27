@@ -1,6 +1,5 @@
 .login {
-    grid-column: 2 / span 1;
-    grid-row: 3;
+    @include grid-content;
     @include centerFlex;
     form {
         @include centerFlex;

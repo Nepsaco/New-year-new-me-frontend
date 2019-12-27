@@ -5,3 +5,8 @@ $shadow1: 2px 2px 5px $primary2;
     flex-flow: column;
     align-items: center;
 }
+
+@mixin grid-content {
+    grid-column: 2 / span 3;
+    grid-row: 3;
+}

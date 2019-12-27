@@ -1,0 +1,21 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-column: span 3;
+    background-color: $primary5;
+
+    h1 {
+        @include titlefont;
+        grid-column: 2;
+        padding-left: 7vw;
+    }
+    nav {
+        padding-right: 7vw;
+        a {
+            color: $primary1;
+            text-decoration: none;
+        }
+    }
+}
+

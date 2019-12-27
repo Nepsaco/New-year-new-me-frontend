@@ -47,7 +47,7 @@ table {
   border-spacing: 0; }
 
 .login {
-  grid-column: 2 / span 1;
+  grid-column: 2 / span 3;
   grid-row: 3;
   display: flex;
   flex-flow: column;
@@ -99,12 +99,53 @@ table {
         .login form input.button:active {
           background-color: #d98cac; }
 
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  grid-column: span 3;
+  background-color: #b94676; }
+  .header h1 {
+    font-family: "Mr Dafoe", cursive;
+    grid-column: 2;
+    padding-left: 7vw; }
+    .header h1 {
+      font-size: 33.1776px; }
+      @media screen and (min-width: 320px) {
+        .header h1 {
+          font-size: calc(33.1776px + 47.8224 * ((100vw - 320px) / 880)); } }
+      @media screen and (min-width: 1200px) {
+        .header h1 {
+          font-size: 81px; } }
+  .header nav {
+    padding-right: 7vw; }
+    .header nav a {
+      color: #250412;
+      text-decoration: none; }
+
+nav {
+  display: grid;
+  grid-column: span 2;
+  align-items: center;
+  justify-items: end;
+  background-color: #b94676; }
+  nav a {
+    text-decoration: none;
+    color: #250412;
+    align-self: center;
+    justify-self: center; }
+
+sidebar {
+  grid-column: 3 / span 3;
+  grid-row: span 3;
+  z-index: 1; }
+
 .App {
   display: grid;
   height: 100vh;
   width: 100vw;
-  grid-template-columns: 10vw auto 10vw;
-  grid-template-rows: 20vw 20vw auto; }
+  grid-template-columns: 10vw auto 10vw 20vw 10vw;
+  grid-template-rows: 15vw 20vw auto; }
   .App {
     font-size: 16px; }
     @media screen and (min-width: 320px) {

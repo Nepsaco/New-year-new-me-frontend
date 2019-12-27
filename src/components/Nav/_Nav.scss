@@ -1,0 +1,13 @@
+nav {
+    display: grid;
+    grid-column: span 2;
+    align-items: center;
+    justify-items: end;
+    background-color: $primary5;
+    a {
+        text-decoration: none;
+        color: $primary1;
+        align-self: center;
+        justify-self: center;
+    }
+}
