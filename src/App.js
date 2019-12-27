@@ -5,11 +5,23 @@ import Login from './components/Login/Login'
 import Header from './components/Header/Header'
 import Nav from './components/Nav/Nav'
 import Sidebar from './components/Sidebar/Sidebar'
+import Resolutions from './components/Resolutions/Resolutions'
+
+const BASE_URL = 'http://localhost:9000'
 
 class App extends Component {
     state = {
-        authorization: null,
+        authorization: true,
+        resolutions: [],
         sidebarActive: null
+    }
+
+    componentDidMount(){
+        fetch(`${BASE_URL}/resolutions`)
+            .then(response => response.json())
+            .then(resolutions => {
+                this.setState({ resolutions })
+            })
     }
 
     // toggleSidebar = () => {
@@ -25,8 +37,8 @@ class App extends Component {
                     <Header />
                     <Nav />
                     {/* <Sidebar /> */}
-                    {this.state.authoriztion 
-                        ?<Resoultions />
+                    {this.state.authorization
+                        ?<Resolutions />
                         :<Login /> 
                     }
                 </div>
